@@ -1,1 +1,106 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.element {
+  padding: 2em 3em;
+  width: 100%;
+}
+.element .element-title {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 2.5rem;
+  margin: 0.5em 0;
+}
+.element .element-description {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 20px;
+  font-size: 1.1rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  margin-bottom: 1.5em;
+}
+.element .element-btn {
+  padding: 1em 2em;
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  font-size: 1.1rem;
+  margin-bottom: 2em;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+.sedan .element-btn {
+  color: hsl(31, 77%, 52%);
+  font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+.suv .element-btn {
+  color: hsl(184, 100%, 22%);
+  font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.luxury .element-btn {
+  color: hsl(179, 100%, 13%);
+  font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.footer {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.2rem;
+  color: hsl(31, 77%, 52%);
+}
+.footer a {
+  text-decoration: none;
+  color: hsl(184, 100%, 22%);
+}
+
+@media (min-width: 992px) {
+  .card-box {
+    flex-direction: row;
+    max-width: 1000px;
+  }
+  .card-box .element .element-btn {
+    transition: background 0.5s, color 0.5s;
+  }
+  .card-box .element .element-btn:hover {
+    background: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+  }
+}/*# sourceMappingURL=main.css.map */
